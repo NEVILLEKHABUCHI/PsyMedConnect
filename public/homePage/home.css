@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+body {
+    overflow: hidden;
+}
+* a {
+    text-decoration: none;
+}
+.homeContainer {
+    width: 100vw;
+    height: 100vh;
+}
+.homeContainer .top {
+    width: inherit;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+}
+.homeContainer .top .left h2 {
+    /* color: #228B22; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.homeContainer .top .right {
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+}
+.homeContainer .top .right a {
+    color: #0070BB;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: bold;
+    font-size: 1rem;
+}
+.homeContainer .top #icon {
+    display: none;
+}
+.homeContainer .body {
+    width: inherit;
+    height: 90vh;
+    background-image: url('/homePage/Landing_page_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 5vw;
+}
+.homeContainer .body .welcome-message {
+    width: 35vw;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.homeContainer .body .welcome-message h2 span {
+    color: #0070BB;
+}
+.homeContainer .body .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.homeContainer .body .buttons a{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #0070BB;
+    color: white;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width:900px) {
+    .homeContainer .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: max-content;
+        display: none;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+    }
+    .homeContainer .top #icon {
+        display: block;
+    }
+}
