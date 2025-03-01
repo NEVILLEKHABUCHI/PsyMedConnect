@@ -39,21 +39,94 @@ body {
 .submitDetailsContainer .top #icon {
     display: none;
 }
+.submitDetailsContainer .body {
+    width: inherit;
+    height: 90vh;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/homePage/Landing_page_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.submitDetailsContainer .body form {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F8F8FF;
+    /* opacity: 0.8; */
+}
+.submitDetailsContainer .body form h4 {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.submitDetailsContainer .body form label {
+    display: none;
+}
+.submitDetailsContainer .body form .inputField {
+    margin: 5px;
+    margin-bottom: 3vh;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid #0070BB;
+    background-color: white;
+}
+.submitDetailsContainer .body form .inputField i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0070BB;
+}
+.submitDetailsContainer .body form .inputField input {
+    width: 20vw;
+    height: 3vh;
+    padding-left: 5px;
+    color: black;
+    background-color: white;
+    border: none;
+    outline: none;
+    /* font-size: 18px; */
+}
+.submitDetailsContainer .body form .button {
+    display: flex;
+    justify-content: center;
+}
+.submitDetailsContainer .body form .button button {
+    border: none;
+    background-color: #0070BB;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
 
 @media only screen and (max-width:900px) {
-    .submitDetailsContainer .right {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .submitDetailsContainer .top #icon {
+        display: block;
+        font-size: 1.2rem;
+    }
+    .submitDetailsContainer #right {
         width: 100vw;
         height: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vh;
+        padding: 15px 0;
+        justify-content: center;
+        align-items: center;
         display: none;
         position: absolute;
         top: 10vh;
         left: 0;
+        background-color: #F2F3F4;
+        /* opacity: 0.5; */
     }
-    .submitDetailsContainer .top #icon {
-        display: block;
+    .submitDetailsContainer .body form .inputField input {
+        width: 70vw;
+        height: 3vh;
     }
 }
