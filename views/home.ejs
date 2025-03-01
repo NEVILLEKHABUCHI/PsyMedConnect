@@ -6,18 +6,8 @@
 </head>
 <body>
     <div class="homeContainer">
-        <div class="top">
-            <div class="left">
-                <h2>PSYMEDCONNECT</h2>
-            </div>
-            <div class="right" id="right">
-                <a href="">HOME</a>
-                <a href="">ABOUT US</a>
-                <a href="">CONTACT US</a>
-                <a href="">SUBMIT DETAILS</a>
-            </div>
-            <i class="fa-solid fa-bars" id="icon"></i>
-        </div>
+
+        <%-include('./partials/navBars.ejs')  %>
 
         <div class="body">
             <div class="welcome-message">
@@ -29,13 +19,13 @@
                 </p>
                 <br/>
                 <div class="buttons">
-                    <a href="">ABOUT US</a>
-                    <a href="">SUBMIT DETAILS</a>
+                    <a href="/about">ABOUT US</a>
+                    <a href="/submitDetails">SUBMIT DETAILS</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="/homePage/homeJavascript.js"></script>
+    <script src="/VanillaJavascript.js"></script>
 </body>
 </html>
