@@ -56,6 +56,26 @@ body {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.homeContainer .body .welcome-message .alert {
+    display: flex;
+    justify-content: center;
+    animation: fadeOut 10s forwards;
+    overflow: hidden;
+}
+.homeContainer .body .welcome-message .alert-success {
+    color: #0070BB;
+}
+.homeContainer .body .welcome-message .alert-danger {
+    color: red;
+}
 .homeContainer .body .welcome-message h2 span {
     color: #0070BB;
 }

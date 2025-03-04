@@ -62,6 +62,26 @@ body {
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.submitDetailsContainer .body form .alert {
+    display: flex;
+    justify-content: center;
+    animation: fadeOut 10s forwards;
+    overflow: hidden;
+}
+.submitDetailsContainer .body form .alert-success {
+    color: #0070BB;
+}
+.submitDetailsContainer .body form .alert-danger {
+    color: red;
+}
 .submitDetailsContainer .body form label {
     display: none;
 }
